@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="Css/dashboard.css">
+	<link rel="stylesheet" href="Css/employee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="js/dashboard.js"></script>
+	<title>Office Management System</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="Home.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Oms</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="Tasks.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Tasks</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="Employee.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Employees</span>
+				</a>
+			</li>
+			<li>
+				<a href="report.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Reports</span>
+				</a>
+			</li>
+			<li>
+				<a href="meeting.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Meetings</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="pro.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+			<a href="pro.html" class="profile">
+				<img src="images/logo.png">
+			</a>	
+			
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<div class="container">
+			<form class="add-employee-form">
+				<h2>Add New Employee</h2>
+				<label for="full-name">Full Name:</label>
+				<input type="text" id="full-name" name="full-name" required>
+			  
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			  
+				<label for="role">Role:</label>
+				<select id="role" name="role" required>
+				  <option value="">Select a role</option>
+				  <option value="Software Engineer">Software Engineer</option>
+				  <option value="Marketing Manager">Marketing Manager</option>
+				  <!-- Add more role options here -->
+				</select>
+			  
+				<button type="submit">Submit</button>
+			  </form>
+			  <div class="employee-filters">
+  
+  <label for="department">Department:</label>
+  <select id="department" name="department">
+    <option value="">All Departments</option>
+    <option value="IT">IT</option>
+    <option value="Marketing">Marketing</option>
+    <!-- Add more department options here -->
+  </select>
+
+  <label for="role">Role:</label>
+  <select id="role" name="role">
+    <option value="">All Roles</option>
+    <option value="Software Engineer">Software Engineer</option>
+    <option value="Marketing Manager">Marketing Manager</option>
+    <!-- Add more role options here -->
+  </select>
+
+  <label for="status">Status:</label>
+  <select id="status" name="status">
+    <option value="">All Statuses</option>
+    <option value="Active">Active</option>
+    <option value="Inactive">Inactive</option>
+  </select>
+
+  <label for="date-joined">Date Joined:</label>
+  <input type="date" id="date-joined" name="date-joined">
+
+  <button id="apply-filters">Apply Filters</button>
+  <button id="reset-filters">Reset Filters</button>
+</div>
+		<table class="employee-table">
+			<thead>
+			  <tr>
+				<th>Name</th>
+				<th>Role</th>
+				<th>Department</th>
+				<th>Status</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>Touseef</td>
+				<td>Software Engineer</td>
+				<td>IT</td>
+				<td>Active</td>
+			  </tr>
+			  <tr>
+				<td>Saqib</td>
+				<td>IT</td>
+				<td>Marketing</td>
+				<td>Inactive</td>
+			  </tr>
+			  <tr>
+				<td>Hassan</td>
+				<td>HR</td>
+				<td>Marketing</td>
+				<td>Inactive</td>
+			  </tr>
+			  <tr>
+				<td>Waqas Jameel</td>
+				<td>Executive  Manager</td>
+				<td>Marketing</td>
+				<td>Inactive</td>
+			  </tr>
+			  <tr>
+				<td>RIZWAN SHAH</td>
+				<td>Manager</td>
+				<td>Management</td>
+				<td>Inactive</td>
+			  </tr>
+			  <tr>
+				<td>Zeeshan</td>
+				<td>HR</td>
+				<td>It</td>
+				<td>Inactive</td>
+			  </tr>
+			  <!-- Add more employee rows here -->
+			</tbody>
+		  </table>
+		</div>
+
+
+		</section>
+	
+	<!-- CONTENT -->
+	
+	
+</body>
+</html>

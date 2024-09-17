@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="Css/dashboard.css">
+	<link rel="stylesheet" href="Css/task.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="js/dashboard.js"></script>
+	<title>Office Management System</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="Home.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Oms</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="Tasks.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Tasks</span>
+				</a>
+			</li>
+			<li>
+				<a href="Employee.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Employees</span>
+				</a>
+			</li>
+			<li>
+				<a href="report.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Reports</span>
+				</a>
+			</li>
+			<li>
+				<a href="meeting.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Meetings</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="pro.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			
+			<a href="" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+			<a href="pro.html" class="profile">
+				<img src="images/logo.png">
+			</a>	
+			
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Home</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class="fa fa-tasks" aria-hidden="true"></i>
+
+					<span class="text">
+						<h3>15</h3>
+						<p>New Tasks</p>
+					</span>
+				</li>
+				<li>
+					<i class="fa fa-tasks" aria-hidden="true"></i>
+					<span class="text">
+						<h3>5</h3>
+						<p>Tasks pending</p>
+					</span>
+				</li>
+				<li>
+					
+					<span class="text">
+						<h3>10</h3>
+						<p>Total  Tasks Completed</p>
+					</span>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Tasks</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Tasks</th>
+								<th>Date Assigned</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<img src="images/profile.png">
+									<p>Integrate an online ordering system or link it with third-party services 
+                                        (e.g., UberEats, DoorDash) with payment gateway integration.</p>
+								</td>
+								<td>01-8-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/profile.png">
+									<p>Create a functional reservation form with a booking calendar and a contact form to gather inquiries
+                                    . </p>
+								</td>
+								<td>25-8-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/profile.png">
+									<p>Implement basic SEO practices for better search engine ranking and set up Google</p>
+								</td>
+								<td>15-09-2021</td>
+								<td><span class="status process">Process</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/profile.png">
+									<p>Develop a section for the restaurant's menu with categories, item descriptions, prices,
+                                         and high-quality images. Make sure it's easy to update.</p>
+								</td>
+								<td>5-10-2021</td>
+								<td><span class="status pending">Pending</span></td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/profile.png">
+									<p>Set up the restaurant website on a platform like WordPress or custom code with HTML/CSS/JavaScript, 
+                                        ensuring it is responsive and mobile-friendly.</p>
+								</td>
+								<td>29-10-2021</td>
+								<td><span class="status completed">Completed</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="todo">
+					<div class="head">
+						<h3>Todos</h3>
+						<i class='bx bx-plus' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<ul class="todo-list">
+						
+						<li >
+							<p>Add Task</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+                           <a href="Tasks.html" class="btn">Add Task</a>
+						</li>
+						<li >
+							<p>Resources</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+                            <a href="" class="btn">Check Resources</a>
+						</li>
+						<li >
+							<p>Schedule Meeting</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+                           <a href="meeting.html" class="btn">Meeting</a>
+						</li>
+						<li >
+							<p>Reports</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+                           <a href="report.html" class="btn">Generate report </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	
+
+		</section>
+	
+	<!-- CONTENT -->
+	
+	
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Css/pro.css">
+  <title>Office Management System</title>
+</head>
+<body>
+  <div class="profile-settings">
+    <h2>Profile Setting </h2>
+    <div class="user-profile">
+      <!-- User Profile Information -->
+      <p>Name: <span id="username"></span></p>
+      <input type="text" id="working-hours" name="working-hours">
+      <p>Email: <span id="useremail"></span></p>
+      <input type="text" id="working-hours" name="working-hours">
+      <!-- Edit Profile Button -->
+      <button id="edit-profile-btn">Edit Profile</button>
+      <!-- Change Password Button -->
+      <p>Password <span id="username"></span></p>
+      <input type="text" id="working-hours" name="working-hours">
+      <p>Confirm Password<span id="useremail"></span></p>
+      <input type="text" id="working-hours" name="working-hours">
+      <button id="change-password-btn">Change Password</button>
+    </div>
+  
+    <h2>System Settings</h2>
+    <div class="system-settings">
+      <!-- Configure Office Details -->
+      <h3>Office Details</h3>
+      <form id="office-details-form">
+        <label for="working-hours">Working Hours:</label>
+        <input type="text" id="working-hours" name="working-hours">
+        <br>
+        <label for="holidays">Holidays:</label>
+        <input type="text" id="holidays" name="holidays">
+        <br>
+        <label for="departments">Departments:</label>
+        <input type="text" id="departments" name="departments">
+        <br>
+        <!-- Add New Department Button -->
+        <button id="add-department-btn">Add New Department</button>
+        <!-- Department Name Field and Submit Button -->
+        <div id="add-department-form">
+          <label for="department-name">Department Name:</label>
+          <input type="text" id="department-name" name="department-name">
+          <button id="submit-department-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  
+    <h2>Security Settings</h2>
+    <div class="security-settings">
+      <!-- Enable Two-Factor Authentication (2FA) -->
+      <label for="fa-toggle">Two-Factor Authentication:</label>
+      <input type="checkbox" id="fa-toggle" name="fa-toggle">
+      <br>
+      <!-- Change Security Questions -->
+      <button id="change-security-questions-btn">Change Security Questions</button>
+      <!-- Logout Button -->
+      <a href="login.html" class="logout-btn">Logout</a>
+      
+    </div>
+    <a href="dashboard.html" class="Home-btn">Home</a>
+  </div>
+</body>
+</html>

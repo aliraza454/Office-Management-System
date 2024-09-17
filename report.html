@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="Css/dashboard.css">
+	<link rel="stylesheet" href="Css/task.css">
+	<link rel="stylesheet" href="Css/report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="js/dashboard.js"></script>
+	<title>Office Management System</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="Home.html" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Oms</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="Tasks.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Tasks</span>
+				</a>
+			</li>
+			<li>
+				<a href="Employee.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Employees</span>
+				</a>
+			</li>
+			<li  class="active">
+				<a href="report.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Reports</span>
+				</a>
+			</li>
+			<li>
+				<a href="meeting.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Meetings</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="pro.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="login.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="" class="notification">
+				<i class='bx bxs-bell'></i>
+				<span class="num">8</span>
+			</a>
+			<a href="pro.html" class="profile">
+				<img src="images/logo.png">
+			</a>	
+			
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+	<div class="container">
+		<h1>Logged Time: Nov 02 - Nov 08</h1>
+
+		<h2>Employee Time</h2>
+	  
+		<table>
+		  <thead>
+			<tr>
+			  <th>Name</th>
+			  <th>Pay Rates</th>
+			  <th>Regular Time</th>
+			  <th>Overtime</th>
+			  <th>Total Hours</th>
+			  <th>Total Paid</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td class="employee-info">
+			
+				<span class="employee-name">Eleanor Pena</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+			<tr>
+			  <td class="employee-info">
+				
+				<span class="employee-name">Floyd Miles</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+			<tr>
+			  <td class="employee-info">
+				
+				<span class="employee-name">Jenny Wilson</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+			<tr>
+			  <td class="employee-info">
+				
+				<span class="employee-name">Annette Black</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+			<tr>
+			  <td class="employee-info">
+				
+				<span class="employee-name">Darlene Robertson</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+			<tr>
+			  <td class="employee-info">
+				
+				<span class="employee-name">Cody Fisher</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+			<tr>
+			  <td class="employee-info">
+				
+				<span class="employee-name">Leslie Alexander</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+			<tr>
+			  <td class="employee-info">
+				
+				<span class="employee-name">Courtney Henry</span>
+				<span class="employee-status">Employee synced</span>
+			  </td>
+			  <td>General Labor - $20.00/hr</td>
+			  <td>08:00 hrs</td>
+			  <td>01:00 hrs</td>
+			  <td>09:00 hrs</td>
+			  <td>$180.00</td>
+			</tr>
+		  </tbody>
+		</table>
+	  
+		<div class="time-summary">
+		  <div class="time-summary-item">
+			<h3>Regular Time:</h3>
+			<span class="value">65:20 hrs</span>
+		  </div>
+		  <div class="time-summary-item">
+			<h3>Overtime:</h3>
+			<span class="value">05:20 hrs</span>
+		  </div>
+		  <div class="time-summary-item">
+			<h3>Total Hours:</h3>
+			<span class="value">90:20 hrs</span>
+		  </div>
+		  <div class="time-summary-item">
+			<h3>Total Paid:</h3>
+			<span class="value">$4580</span>
+		  </div>
+		</div>
+	  
+		<h2>Time Logs</h2>
+	  
+		<div class="time-log">
+		  <div class="employee-info">
+			<img src="images/profile.png" alt="Employee Avatar">
+			<span class="employee-name">Darrell Steward</span>
+			<span class="employee-status">Employee synced</span>
+		  </div>
+		  <table class="time-log">
+			<thead>
+			  <tr>
+				<th>Time Type</th>
+				<th>Date</th>
+				<th>Time In-Out</th>
+				<th>Duration</th>
+				<th>Payroll Account</th>
+				<th>Project</th>
+				<th>Task</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>Regular</td>
+				<td>Nov 03, 2023</td>
+				<td class="time-in-out">8:38 AM - 5:38 PM</td>
+				<td class="duration">10:20 hrs</td>
+				<td class="payroll-account">2000 - General Labor</td>
+				<td class="project">Kelly Kapoor</td>
+				<td class="task">Shower Tiles Installation</td>
+			  </tr>
+			</tbody>
+		  </table>
+	  
+		  <div class="approved-time">
+			<h4>Approved time totals by type for period</h4>
+			<div>Regular: <span class="value">10 hrs 20 mins</span></div>
+			<div>Over time: <span class="value">-</span></div>
+			<div>Total: <span class="value">10 hrs 20 mins</span></div>
+		  </div>
+		</div>
+	  
+		<div class="time-log">
+		  <div class="employee-info">
+			<img src="images/profile.png" alt="Employee Avatar">
+			<span class="employee-name">Jerome Bell</span>
+			<span class="employee-status">Employee synced</span>
+		  </div>
+		  <table class="time-log">
+			<thead>
+			  <tr>
+				<th>Time Type</th>
+				<th>Date</th>
+				<th>Time In-Out</th>
+				<th>Duration</th>
+				<th>Payroll Account</th>
+				<th>Project</th>
+				<th>Task</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>Regular</td>
+				<td>Nov 03, 2023</td>
+				<td class="time-in-out">8:38 AM - 5:38 PM</td>
+				<td class="duration">10:20 hrs</td>
+				<td class="payroll-account">2000 - General Labor</td>
+				<td class="project">Kelly Kapoor</td>
+				<td class="task">Shower Tiles Installation</td>
+			  </tr>
+			</tbody>
+		  </table>
+	  
+		  <div class="approved-time">
+			<h4>Approved time totals by type for period</h4>
+			<div>Regular: <span class="value">10 hrs 20 mins</span></div>
+			<div>Over time: <span class="value">-</span></div>
+			<div>Total: <span class="value">10 hrs 20 mins</span></div>
+		  </div>
+	  
+		  <div class="unapproved-time">
+			<h4>Unapproved time totals by type for period</h4>
+			<div>Regular: <span class="value">02 hrs 12 mins</span></div>
+			<div>Over time: <span class="value">01 hrs 45 mins</span></div>
+			<div>Total: <span class="value">32 hrs 57 mins</span></div>
+		  </div>
+		</div>
+	</div>
+	
+
+		</section>
+	
+	<!-- CONTENT -->
+	
+	
+</body>
+</html>

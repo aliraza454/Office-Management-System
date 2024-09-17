@@ -1,0 +1,92 @@
+/* pro.css */
+
+/* Global Styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	background-color: orange; 
+  }
+  
+  .profile-settings {
+	max-width: 800px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff; /* white background */
+	border: 1px solid #ddd; /* light gray border */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  }
+  
+  h2 {
+	color: orange; /* orange color */
+	margin-bottom: 10px;
+	font-size: 36px;
+  }
+  
+  h3 {
+	color: #666; /* dark gray color */
+	margin-bottom: 10px;
+  }
+  
+  label {
+	display: block;
+	margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc; /* light gray border */
+  }
+  
+  button {
+	background-color: #ffa07a; /* orange color */
+	color: #fff; /* white text */
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .Home-btn{
+	background-color: #ffa07a; /* orange color */
+	color: #fff; /* white text */
+	padding: 10px 20px;
+   
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .logout-btn{
+	background-color: #ffa07a; /* orange color */
+	color: #fff; /* white text */
+	padding: 10px 20px;
+   
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #ff9900; /* darker orange color */
+  }
+  
+  #add-department-form {
+	display: none; /* hide by default */
+  }
+  
+ 
+  
+  fa-toggle{
+	width: 20px;
+	height: 20px;
+  }
+  
+  .security-settings {
+	margin-top: 20px;
+  }
